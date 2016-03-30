@@ -1,0 +1,18 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DefaultLayout"
+    tools:context=".MainActivity">
+
+    <Button style="@style/TealButton"
+        android:text="add new item"
+        android:layout_gravity="right"
+        android:id="@+id/add"/>
+    <View style="@style/BlankSpaceSpaceVertical" />
+
+    <ListView style="@style/LayoutMatchParent"
+        android:dividerHeight="@dimen/component_padding_margin"
+        android:divider="@android:color/transparent"
+        android:id="@+id/lv_item" />
+
+</LinearLayout>

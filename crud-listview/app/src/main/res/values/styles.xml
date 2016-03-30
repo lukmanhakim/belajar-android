@@ -1,0 +1,160 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccentDark</item>
+        <item name="textColorAlertDialogListItem">@color/black_secondary_text</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/black_secondary_text</item>
+    </style>
+
+    <style name="LayoutMatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LayoutWrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutFillParent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="LayoutMatchParent.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ComponentLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DefaultLayout" parent="LayoutMatchParent.Vertical">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">false</item>
+        <item name="android:descendantFocusability">beforeDescendants</item>
+        <item name="android:padding">@dimen/component_padding_margin</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <style name="Panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/panel_bg</item>
+        <item name="android:padding">@dimen/layout_padding_margin</item>
+    </style>
+
+    <style name="Panel.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Panel.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="BlankSpaceSpaceHorizontal">
+        <item name="android:layout_width">@dimen/layout_padding_margin</item>
+        <item name="android:layout_height">@dimen/line</item>
+    </style>
+
+    <style name="BlankSpaceSpaceVertical">
+        <item name="android:layout_width">@dimen/line</item>
+        <item name="android:layout_height">@dimen/layout_padding_margin</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/component_padding_margin</item>
+    </style>
+
+    <style name="Text.Headline">
+        <item name="android:textColor">@color/black_primary_text</item>
+        <item name="android:textSize">@dimen/abc_text_size_headline_material</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+    </style>
+
+    <style name="Text.Label">
+        <item name="android:textColor">@color/black_secondary_text</item>
+        <item name="android:textSize">@dimen/abc_text_size_medium_material</item>
+        <item name="android:fontFamily">sans-serif-normal</item>
+    </style>
+
+    <style name="RedButtonTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/material_red_dark</item>
+        <item name="colorButtonNormal">@color/material_red</item>
+        <item name="android:textColorPrimary">@color/white_primary_text</item>
+    </style>
+
+    <style name="RedButton">
+        <item name="android:theme">@style/RedButtonTheme</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="OrangeButtonTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorAccentDark</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/white_primary_text</item>
+    </style>
+
+    <style name="OrangeButton">
+        <item name="android:theme">@style/OrangeButtonTheme</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TealButtonTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/white_primary_text</item>
+    </style>
+
+    <style name="TealButton">
+        <item name="android:theme">@style/TealButtonTheme</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="FloatingLabelTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/material_grey_600</item>
+        <item name="colorControlActivated">@color/black_primary_text</item>
+    </style>
+
+    <style name="FloatingLabel">
+        <item name="android:theme">@style/FloatingLabelTheme</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/black_secondary_text</item>
+        <item name="colorControlNormal">@color/material_grey_600</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:theme">@style/EditTextTheme</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="EditTextError" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/material_red_dark</item>
+    </style>
+
+</resources>

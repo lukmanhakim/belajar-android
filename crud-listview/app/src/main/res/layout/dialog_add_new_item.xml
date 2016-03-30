@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ComponentLayout"
+    android:padding="@dimen/layout_padding_margin"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/FloatingLabel"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/EditTextError"
+        android:id="@+id/lbl_title">
+        <AutoCompleteTextView style="@style/EditText"
+            android:hint="Title"
+            android:id="@+id/txt_title" />
+    </android.support.design.widget.TextInputLayout>
+    <View style="@style/BlankSpaceSpaceVertical" />
+    <android.support.design.widget.TextInputLayout
+        style="@style/FloatingLabel"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/EditTextError"
+        android:id="@+id/lbl_subtitle">
+        <AutoCompleteTextView style="@style/EditText"
+            android:hint="Subtitle"
+            android:id="@+id/txt_subtitle" />
+    </android.support.design.widget.TextInputLayout>
+    <View style="@style/BlankSpaceSpaceVertical" />
+    <LinearLayout style="@style/ComponentLayout"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <Button style="@style/OrangeButton"
+            android:text="cancel"
+            android:id="@+id/cancel" />
+        <Button style="@style/TealButton"
+            android:text="Save"
+            android:id="@+id/save" />
+    </LinearLayout>
+</LinearLayout>
