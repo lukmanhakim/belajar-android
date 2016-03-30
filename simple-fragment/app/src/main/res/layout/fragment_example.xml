@@ -1,0 +1,26 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DefaultLayout"
+    tools:context="com.example.opaw.simplefragment.fragment.ExampleFragment">
+
+    <TextView style="@style/Text.Headline"
+        android:gravity="center"
+        android:text="FRAGMENT 1"/>
+
+    <View style="@style/BlankSpaceSpaceVertical" />
+
+    <LinearLayout style="@style/ComponentLayout"
+        android:orientation="horizontal">
+        <Button style="@style/TealButton"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="show toast"
+            android:id="@+id/btn_action_toast_fragment_1"/>
+        <Button style="@style/OrangeButton"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="go to fragment 2"
+            android:id="@+id/btn_action_go_to_fragment_2"/>
+    </LinearLayout>
+</LinearLayout>
