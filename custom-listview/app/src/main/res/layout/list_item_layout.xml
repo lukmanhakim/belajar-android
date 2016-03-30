@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Panel.Vertical">
+
+    <TextView style="@style/Text.Headline"
+        android:text="Title"
+        android:id="@+id/list_item_title" />
+
+    <TextView style="@style/Text.Label"
+        android:text="Subtitle"
+        android:id="@+id/list_item_subtitle" />
+
+    <LinearLayout style="@style/ComponentLayout"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button style="@style/OrangeButton"
+            android:text="action 1"
+            android:id="@+id/btn_action_1"/>
+
+        <Button style="@style/TealButton"
+            android:text="action 2"
+            android:id="@+id/btn_action_2"/>
+
+    </LinearLayout>
+</LinearLayout>
